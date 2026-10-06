@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Atelier",
+    "slug": "atelier-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "atelier",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.atelier.tryon",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Atelier uses your camera to photograph a garment in-store and to take your reference photo for try-on.",
+        "NSPhotoLibraryUsageDescription": "Atelier lets you pick a photo of a garment or yourself from your library."
+      }
+    },
+    "android": {
+      "package": "com.atelier.tryon",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Atelier uses your camera to photograph garments and take your reference photo."
+        }
+      ]
+    ]
+  }
+}
